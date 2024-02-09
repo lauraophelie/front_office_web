@@ -22,9 +22,9 @@ function MessageBloc(props){
         <div className={classname}>
             {data.map((item) => (
                 <MessageComponent
-                    utilisateur = {item.sender}
-                    time = {item.dateHeure}
-                    phrase = {item.contenuMessage}
+                    utilisateur = {item.user}
+                    time = {item.datetime}
+                    phrase = {item.phrase}
                 />
             ))}
         </div>
