@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './assets/style.css';
-import Contatc from './component/Popup';
+import Err from './component/Error';
 
-function Contact() {
+function Error() {
   const [isPopupOpen, setPopupOpen] = useState(false);
 
   const openPopup = () => {
@@ -15,10 +15,10 @@ function Contact() {
 
   return (
     <div>
-      <h1>Contact</h1>
-      <button onClick={openPopup}>Ouvrir le Pop-up</button>
+      <h1>ty le popup manao required</h1>
+      <button onClick={openPopup}>ouvrir</button>
 
-      <Contatc
+      <Err
         isOpen={isPopupOpen}
         onClose={closePopup}
         content="Contenu du Pop-up"
@@ -27,4 +27,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Error;
