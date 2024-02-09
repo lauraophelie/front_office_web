@@ -1,0 +1,57 @@
+$font_title : "Trebuchet MS";
+$font_normal : "Segoe UI";
+$menu_color: #231F49;
+$title_color: #372F7A;
+$background_color: #F8F8F8;
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;
+    background-color: $menu_color;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 100px;
+    justify-content: space-between;
+
+    &_logo{
+        font-family: 'Tahoma';
+        font-size: 22px;
+        color: white;
+    }
+
+    &_link{
+        display: flex;
+        width: 400px;
+        justify-content: space-between;
+        align-content: center;
+
+        &_button{
+            font-family: $font_normal;
+            font-size: 14px;
+            color: white;
+            background-color: $menu_color;
+            border: none;
+
+            :hover{
+                font-size: 16px;
+            }
+        }
+    }
+
+    &_login{
+        font-family: $font_normal;
+        font-size: 14px;
+        color: white;
+        margin-right: 200px;
+        background-color: $menu_color;
+        border: none;
+        
+        :hover{
+            font-size: 16px;
+        }
+    }
+}
