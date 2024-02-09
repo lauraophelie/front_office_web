@@ -7,15 +7,15 @@ function MessageDetails(props){
     console.log("user: ", user);
     console.log("phrase: ", phrase);
 
-    const sameUser = account && user && account.id === user.id
+    const sameUser = account === user.user
 
-    const className = sameUser ? 'content_myMessage' : 'content_theirMessage'
+    const className = sameUser ? 'message_myMessage' : 'message_theirMessage'
 
     console.log(className);
     return(
         <div className = {className}>
-            <div className="message_conversation_time">{time}</div>
-            <div className="message_conversation_chat">{phrase}</div>
+            <div className= "time">{time}</div>
+            <div className= "text">{phrase}</div>
         </div>
     )
 }

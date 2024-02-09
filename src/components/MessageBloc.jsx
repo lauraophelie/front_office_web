@@ -2,6 +2,7 @@ import MessageComponent from "./MessageComponent"
 
 function MessageBloc(props){
     const {classname} = props
+
     const data =[
         { 
             user: "Nom utilisateur", 
@@ -21,9 +22,9 @@ function MessageBloc(props){
         <div className={classname}>
             {data.map((item) => (
                 <MessageComponent
-                    utilisateur = {item.user}
-                    time = {item.datetime}
-                    phrase = {item.phrase}
+                    utilisateur = {item.sender}
+                    time = {item.dateHeure}
+                    phrase = {item.contenuMessage}
                 />
             ))}
         </div>
