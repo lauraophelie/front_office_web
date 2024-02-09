@@ -1,17 +1,40 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Accueil from './Home';  
-import Contact from './Contact';
-import Error from './Error';
+import React from "react";
+import Menu from "./component/menu";
+import Form from "./component/Form";
+import Card from "./component/Card"; // Assurez-vous d'importer le composant Card
 
-function App() {
+const App = () => {
+  // Liste des données de cartes
+  const cardData = [
+    { title: "Titre 1", description: "Description 1", price: "1000" },
+    { title: "Titre 2", description: "Description 2", price: "2000" },
+    { title: "Titre 3", description: "Description 3", price: "3000" },
+    { title: "Titre 1", description: "Description 1", price: "1000" },
+    { title: "Titre 1", description: "Description 1", price: "1000" },
+    { title: "Titre 1", description: "Description 1", price: "1000" },
+    { title: "Titre 2", description: "Description 2", price: "2000" },
+    { title: "Titre 3", description: "Description 3", price: "3000" },
+    { title: "Titre 1", description: "Description 1", price: "1000" },
+    { title: "Titre 1", description: "Description 1", price: "1000" },
+    { title: "Titre 1", description: "Description 1", price: "1000" },
+    { title: "Titre 2", description: "Description 2", price: "2000" },
+    { title: "Titre 3", description: "Description 3", price: "3000" },
+    { title: "Titre 1", description: "Description 1", price: "1000" },
+  ];
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/error" element={<Error />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Menu />
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", columnGap: "20px" }}>
+        <Form />
+        <div style={{ marginTop: '100px', marginLeft: '20px',display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", columnGap: "20px" }}>
+          {cardData.map((card, index) => (
+            <Card key={index} title={card.title} description={card.description} price={card.price} />
+          ))}
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
 export default App;

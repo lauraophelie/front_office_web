@@ -1,4 +1,4 @@
-import '../assets/menu.scss'
+import '../assets/scss/message.scss'
 import Button from './Button';
 
 function Menu(){
