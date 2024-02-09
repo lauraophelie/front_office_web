@@ -2,6 +2,7 @@ $font_title : "Trebuchet MS";
 $font_normal : "Segoe UI";
 $menu_color: #231F49;
 $title_color: #372F7A;
+$background_color: #F8F8F8;
 
 .menu{
     position: fixed;
@@ -56,9 +57,11 @@ $title_color: #372F7A;
 }
 
 .content{
-    margin-top: 100px;
+    margin-top: 90px;
+    width: 100%;
     padding: 50px;
-    background-color: #F8F8F8;
+    background-color: $background_color;
+    height: 100%;
 
     &_inline{
         display: flex;
@@ -79,29 +82,41 @@ $title_color: #372F7A;
         &_component{
             margin-left: 100px;
             height: 80px;
-            width: 900px;
+            width: 80%;
             padding: 30px;
             background-color: white;
             margin-bottom: 20px;
         }
 
         &_user{
-            font: $font_title;
-            font-size: 16px;
+            font-family: $font_title;
+            font-size: 18px;
             color: $title_color;
         }
 
         &_datetime{
-            font: $font_normal;
+            font-family: $font_normal;
             font-size: 10px;
             color: #B9B9B9;
         }
 
         &_text{
-            font: $font_normal;
+            font-family: $font_normal;
             color: #9F9F9F;
         }
     }
 
-    
+    &_listMessage{
+        position: fixed;
+        width:40%;
+        margin-right: 0;
+        padding-right: 100px;
+        left: 0;
+        background-color: $background_color;
+    }
+
+    &_details_message{
+        position: fixed;
+        left: 50%;
+    }
 }

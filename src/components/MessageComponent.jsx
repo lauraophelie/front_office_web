@@ -3,6 +3,7 @@ import '../assets/scss/message.scss'
 function MessageComponent(props){
 
     const {time, phrase, utilisateur} = props
+    
     return(
         <div className="content_message_component">
             <div className='content_inline'>
