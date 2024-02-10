@@ -6,7 +6,9 @@ function ListeMessage(){
         <>
             <Menu/>
             <div className="content">
-                <ContentConversationMessage />
+                <div className="content__liste_message">
+                    <ContentConversationMessage />
+                </div>
             </div>
         </>
     )
