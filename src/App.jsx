@@ -14,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/message" />
         <Route path="/favoris" />
+        <Route path="/annonces" />
        </Routes>
     </BrowserRouter>
   );
