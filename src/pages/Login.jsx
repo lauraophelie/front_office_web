@@ -5,6 +5,7 @@ import axios from 'axios';
 import {Link, useNavigate} from'react-router-dom';
 
 import '../assets/scss/login.scss'
+import Cookie from 'js-cookies';
 
 function Login() {
     const [password, setPassword] = useState("password456");
@@ -29,8 +30,9 @@ function Login() {
        })
        .then((response) => {
         console.log(response.data);
-        
-        navigate('/')
+        Cookie.setItem("token", response.data.token);
+        Cookie.setItem("email",response.data.email);
+        navigate('/');
        })
        .catch((error) => {
         console.error(error);

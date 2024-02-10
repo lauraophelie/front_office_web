@@ -4,8 +4,12 @@ import Menu from "../components/Menu";
 import NewMessage from "../components/NewMessage";
 
 import '../assets/scss/message.scss'
+import Cookie from "js-cookies";
 
 function ConversationMessage(){
+
+    const connected = (Cookie.getItem("token"))? true : false
+
     const user = { id : 1, name : 'Nom utilisateur'}
     const sender = { id: 2, name: 'Nom sender'}
 
@@ -37,6 +41,8 @@ function ConversationMessage(){
         <>
             <Menu/>
             <div className = "content">
+                if()
+
                 <div className="content_listMessage">
                     <ContentConversationMessage 
                         className = "content_general"
