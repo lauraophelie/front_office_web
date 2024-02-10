@@ -1,4 +1,4 @@
-import Menu from './component/Menu';
+import Menu from './components/Menu';
 import Card from './component/Card';
 import Voiture from '../public/image/voiture.png';
 import './assets/home.css';

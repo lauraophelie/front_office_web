@@ -1,17 +1,16 @@
 import "../assets/scss/message.scss"
-import Button from "./Button"
 
 function NewMessage(){
     const onClick = null;
     return(
-        <>
-            <input type="text" placeholder écrire quelque chose ici/>
-            <Button
+        <div className="envoi_message">
+            <input type="text" placeholder="Ecrire quelque chose ici" />
+            <button><img
+                className="submit__send__message"
                 onClick = {onClick}
-                icon = "Icon_material-send.svg"
-            />
-        </>
+                src = "assets/icon/Icon_material-send.svg"
+            /></button>
+        </div>
     )
 }
-
 export default NewMessage

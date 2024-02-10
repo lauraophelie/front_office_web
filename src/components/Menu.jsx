@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../assets/menu.scss'
 import Button from '../component/Button';
 
@@ -7,27 +8,27 @@ function Menu(){
             <div className="menu">
                 <div className="menu_logo">Occaz</div>
                 <div className="menu_link">
-                    <Button
+                    <Link to="/"><Button
                         className="menu_link_button"
                         text = "Home"
-                    />
-                    <Button
+                    /></Link>
+                    <Link to="/annonces"> <Button
                         className="menu_link_button"
                         text = "Annonces"
-                    />
-                    <Button
+                    /> </Link>
+                    <Link to="/message"> <Button
                         className="menu_link_button"
                         text = "Messages"
-                    />
-                    <Button
+                    /></Link>
+                    <Link to="/favoris"> <Button
                         className="menu_link_button"
                         text = "Favoris"
-                    />
+                    /></Link>
                 </div>
-                <Button 
+                <Link to="/login"><Button 
                     className="menu_login" 
                     text="Se connecter" 
-                />
+                /></Link>
             </div>
         </>
     )

@@ -17,6 +17,9 @@ $background_color: #F8F8F8;
     padding-left: 100px;
     justify-content: space-between;
 
+    a{
+        text-decoration: none;
+    }
     &_logo{
         font-family: 'Tahoma';
         font-size: 22px;

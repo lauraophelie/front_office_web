@@ -3,6 +3,8 @@ import DetailsMessage from "../components/DetailsMessage";
 import Menu from "../components/Menu";
 import NewMessage from "../components/NewMessage";
 
+import '../assets/scss/message.scss'
+
 function ConversationMessage(){
     const user = { id : 1, name : 'Nom utilisateur'}
     const sender = { id: 2, name: 'Nom sender'}
@@ -30,6 +32,7 @@ function ConversationMessage(){
             phrase: "Lorem ipsum dolor sit amet Sadipscing elitr sed dolores dolores ut duo vero adipiscing. Et et dolor erat dolores takimata est laoreet qui no duo.." 
         } 
     ]
+    
     return(
         <>
             <Menu/>
@@ -38,17 +41,17 @@ function ConversationMessage(){
                     <ContentConversationMessage 
                         className = "content_general"
                     />
-                </div>
-                <div className="content_details_message">
-                    <div className="content_details_message_title">
-                        <span> {sender.name} </span>
+                    <div className="content_details_message">
+                        <div className="content_details_message_title">
+                            <span> {sender.name} </span>
+                        </div>
+                        <DetailsMessage
+                            user = {user}
+                            className="content_details_message_content"
+                            conversation = {conversation}
+                        />
+                        <NewMessage/>
                     </div>
-                    <DetailsMessage
-                        user = {user}
-                        className="content_details_message_content"
-                        conversation = {conversation}
-                    />
-                    <NewMessage/>
                 </div>
             </div>
         </>

@@ -1,5 +1,5 @@
 import React from "react";
-import Menu from "../component/menu";
+import Menu from "../components/Menu";
 import Form from "../component/Form";
 import Card from "../component/Card"; // Assurez-vous d'importer le composant Card
 

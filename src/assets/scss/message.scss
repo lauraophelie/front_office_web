@@ -34,6 +34,8 @@ $background_color: #F8F8F8;
             font-size: 24px;
             color: $title_color;
             top: 120px;
+            z-index: 1;
+            background-color: white;
         }
 
         &__bloc{
@@ -50,6 +52,7 @@ $background_color: #F8F8F8;
             width: 80%;
             padding: 10px;
             background-color: white;
+            margin-bottom: 10px;
         }
 
         &_user{
@@ -75,7 +78,7 @@ $background_color: #F8F8F8;
         width: 40%;
         height: 100%;
         margin-right: 0;
-        //padding-right: 120px;
+        margin-top: 40px;
         left: 0;
         overflow-x: hidden;
         overflow-y: scroll;
@@ -144,4 +147,17 @@ $background_color: #F8F8F8;
             font-size: 14px;
         }
     }
+}
+
+.submit__send__message{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.envoi_message{
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    margin-left: 300px;
 }

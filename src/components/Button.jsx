@@ -4,7 +4,7 @@ function Button(props){
         <>
             <button className = {className}>
                 {text}
-                <img width="20px" src={icon}/>
+                <img src={icon}/>
             </button>
         </>
     )
