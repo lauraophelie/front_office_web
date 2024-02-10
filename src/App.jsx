@@ -12,7 +12,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/error" element={<Error />} />
         <Route path="/login" element={<Login/>} />
-      </Routes>
+        <Rout path="/message" />
+        <Rout path="/favoris" />
+       </Routes>
     </BrowserRouter>
   );
 }

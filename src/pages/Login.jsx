@@ -33,6 +33,7 @@ function Login() {
        })
        .then((response) => {
         console.log(response.data);
+        
         navigate('/')
        })
        .catch((error) => {
@@ -75,12 +76,12 @@ function Login() {
                         </Link>
                     </div>
                 </div>
-                <LoginPicture
+            </div>
+            <LoginPicture
                     className = 'login__picture'
                     image = "assets/images/Care_of_Tesla.jpg"
                     alt = "Image de fond"
                 />
-            </div>
         </div>
     )
 }

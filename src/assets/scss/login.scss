@@ -6,3 +6,12 @@ $simple : 'Segoe UI';
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.login{
+    display: flex;
+    flex-direction: row;
+
+    &__picture{
+        height: 100%;
+    }
+}
