@@ -1,4 +1,4 @@
-const App = () => {
+function App() {
 }
 
 export default App;
