@@ -1,5 +1,5 @@
-import Menu from './component/menu';
-import Card from './component/card';
+import Menu from './component/Menu';
+import Card from './component/Card';
 import Voiture from '../public/image/voiture.png';
 import './assets/home.css';
 
