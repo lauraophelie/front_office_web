@@ -55,3 +55,138 @@ $background_color: #F8F8F8;
         }
     }
 }
+
+.content{
+    margin-top: 90px;
+    width: 100%;
+    padding: 50px;
+    background-color: $background_color;
+    height: 100%;
+
+    &_inline{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_message{
+        
+        &_title{
+            position: inherit;
+            margin-left: 100px;
+            font-family: $font_title;
+            font-size: 24px;
+            color: $title_color;
+            margin-bottom: 30px;
+        }
+
+        &__bloc{
+            height: 500px;
+            overflow-y: scroll;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        &_component{
+            margin-left: auto;
+            margin-right: auto;
+            height: 80px;
+            width: 80%;
+            padding: 30px;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        &_user{
+            font-family: $font_title;
+            font-size: 16px;
+            color: $title_color;
+        }
+
+        &_datetime{
+            font-family: $font_normal;
+            font-size: 10px;
+            color: #B9B9B9;
+        }
+
+        &_text{
+            font-family: $font_normal;
+            color: #9F9F9F;
+        }
+    }
+
+    &_listMessage{
+        background-color: $background_color;
+        width: 40%;
+        height: 100%;
+        margin-right: 0;
+        //padding-right: 120px;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    &_details_message{
+        position: fixed;
+        height: 100%;
+        left: 50%;
+        top : 95px; 
+        background-color: white;
+        overflow-y: auto;
+
+        &_title{
+            position: fixed;
+            width: 100%;
+            border-bottom: solid 5px $background_color;
+            height: 25px;
+            padding: 20px 70px 20px 70px;
+            display: flex;
+            align-content: center;
+            font-family: $font_title;
+            font-size: 16px;
+        }
+
+        &_content{
+            margin-top: 65px;
+            padding: 20px 50px 20px 50px;
+            margin-bottom: 100px;
+            position: relative;
+        }
+    }
+}
+.message{
+    &_myMessage{
+        padding: 20px 20px 10px 20px;
+        margin-left: 100px;
+        .time{
+            font-family: $font_normal;
+            font-size: 10px;
+            color: #B9B9B9;
+            padding-bottom: 5px;
+            width: 100%;
+            text-align: right;
+        }
+        .text{
+            padding: 10px;
+            background-color: #6E5CEF;
+            font-family: $font_normal;
+            font-size: 14px;
+        }
+    }
+
+    &_theirMessage{
+        padding: 20px 20px 10px 20px;
+        .time{
+            font-family: $font_normal;
+            font-size: 10px;
+            color: #B9B9B9;
+            padding-bottom: 5px;
+        }
+        .text{
+            padding: 10px;
+            background-color: #F9F9F9;
+            font-family: $font_normal;
+            font-size: 14px;
+        }
+    }
+}
