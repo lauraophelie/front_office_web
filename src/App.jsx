@@ -12,8 +12,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/error" element={<Error />} />
         <Route path="/login" element={<Login/>} />
-        <Rout path="/message" />
-        <Rout path="/favoris" />
+        <Route path="/message" />
+        <Route path="/favoris" />
        </Routes>
     </BrowserRouter>
   );
