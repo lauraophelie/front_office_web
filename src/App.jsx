@@ -6,6 +6,7 @@ import ConversationMessageConnect from './pages/ConversationMessageConnect';
 import Accueil from './Home';  
 import Contact from './Contact';
 import Error from './Error';
+import Home from './Home';
 
 function App() {
 
@@ -17,9 +18,10 @@ function App() {
         <Route path="/conversation" element={<ConversationMessage/>} />
         <Route path="/conversationBlank" element={<ConversationNoMessage/>} />
         <Route path="/conversationNotAuth" element={<ConversationMessageConnect/>} />
-        <Route path="/" element={<Accueil />} />
+        <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/error" element={<Error />} />
+        <Route path="/annonces" />
       </Routes>
       </Router>
     </>

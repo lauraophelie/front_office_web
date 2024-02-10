@@ -11,7 +11,8 @@ function ContentConversationMessage(props){
                     className = "content_message_title"
                     nombre = "3"
                 />
-            <SearchBar 
+            <div className="content_message_content">
+                <SearchBar 
                     icon = "assets\icon\Icon feather-search.svg"
                     className = "search_bar"
                     text = "Recherchez une conversation"
@@ -19,6 +20,7 @@ function ContentConversationMessage(props){
                 <MessageBloc 
                     className = "content_message_bloc"
                 />
+            </div>
         </div>
     )
 }

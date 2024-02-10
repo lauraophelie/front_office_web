@@ -1,5 +1,5 @@
-import '../assets/scss/message.scss'
-import Button from './Button';
+import '../assets/menu.scss'
+import Button from '../component/Button';
 
 function Menu(){
     return(
