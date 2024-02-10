@@ -1,5 +1,5 @@
+import React from 'react';
 import Modal from 'react-modal';
-
 
 const Popup = ({ isOpen, onClose, content }) => {
   return (
@@ -7,19 +7,11 @@ const Popup = ({ isOpen, onClose, content }) => {
       isOpen={isOpen}
       onRequestClose={onClose}
       contentLabel="Example Modal"
-      className="popup"
     >
-    <div>
-        <button className='fermer' onClick={onClose}>X</button>
-    </div>
-    <div>
-      <h5 className='titre'>Contacter le proprietaire</h5>
-    </div>
-    <div>
-      <h3 className='your_message'>Votre message : </h3>
-      <textarea className='text'></textarea>
-      <button className='fermer' onClick={onClose}>Se connecter</button>
-    </div>
+      <div>
+        <p>{content}</p>
+        <button onClick={onClose}>Fermer</button>
+      </div>
     </Modal>
   );
 };
